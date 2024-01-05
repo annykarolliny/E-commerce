@@ -1,0 +1,355 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #0a0a0c;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100vw;
+    background-color: #161618;
+    padding: 17px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.cabecalho > img {
+    height: 45px;
+    width: 45px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+
+.cabecalho > h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #ffff;
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.cabecalho > nav {
+    margin-left: 30px;
+    width: 1050px;
+}
+
+.cabecalho > nav > a {
+    font-size: 16px;
+    color: #b3b3b3;
+    padding-left: 15px;
+    transition: all 0.3s;
+}
+
+.cabecalho > nav > a:hover {
+    color: #ffff;
+}
+
+.cabecalho > div {
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.cabecalho > div > .logo {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: 20px;
+    transition: all 0.3s;
+} 
+
+.cabecalho > div >  .logo:hover{
+    background-color: rgb(8, 8, 8);
+    border-radius: 10px;
+} 
+
+.cabecalho > div > #baixar {
+    color: black;
+    background-color: rgb(18, 197, 221); 
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 6px;
+    height: 33px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.cabecalho > div > #baixar:hover {
+    background-color: rgb(29, 167, 185);
+}
+
+main {
+    margin: auto;
+    width: 1000px;
+    margin-top: 110px;
+}
+
+.inicio {
+    display: flex;
+}
+
+.inicio > a {
+    margin-left: 930px;
+    font-size: 16px;
+    color: #b3b3b3;
+    transition: all 0.3s;
+}
+
+.inicio > a:hover {
+    color: #ffff;
+}
+
+.grande-container {
+    display: flex;
+}
+
+.principal {
+    width: 78%;
+}
+
+.principal > div {
+    margin-top: 30px;
+    display: flex;
+}
+
+.principal > div > p {
+    color: #ffffff9c;
+    font-size: 16px;
+    margin-top: 3.8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.principal > div > select {
+    background-color: transparent;
+    color: #ffff;
+    margin-left: 8px;
+    padding: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.principal > div > select > option {
+    background-color: #1f1e1e;
+    color: #ffff;
+}
+
+.cards {
+    display: flex;
+}
+
+.cards > .game {
+    margin-right: 20px;
+}
+
+.cards > .game:hover {
+    cursor: pointer;
+}
+
+.cards > .game > a > img {
+    width: 190px;
+    height: 230px;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.cards > .game > a > img:hover {
+    opacity: 0.9;
+}
+
+.cards > .game > .descricao {
+    margin-top: 10px;
+}
+
+.cards > .game > .descricao > p {
+    font-size: 10px;
+    color: #858585;
+    font-weight: 700;
+    background-color: #1f1e1e;
+    display: inline;
+    padding: 4px;
+    border-radius: 3px;
+}
+
+.cards > .game > .descricao > h2 {
+    color: #ffff;
+    font-size: 15px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.cards > .game > .descricao > div {
+    display: flex;
+    margin-top: 8px
+}
+
+.descricao > div > span {
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.valores {
+    margin-left: 26%;
+}
+
+.valores > em {
+    color: #ffffffb6;
+    text-decoration: line-through;
+}
+
+.valores > h2 {
+    color: #ffff;
+}
+
+.filtro {
+    margin-left: 50px;
+    margin-top: 80px;
+}
+
+.filtro > h2 {
+    color: #ffff;
+    margin-bottom:10px;
+}
+
+.filtro > form {
+    display: flex;
+    width: 250px;
+    background-color: #1f1e1e;
+    padding: 6px;
+    border-radius: 4px;
+}
+
+.filtro > form > input {
+    width: 250px;
+    padding: 5px;
+    background-color: #1f1e1e;
+    border: none;
+    border-radius: 4px;
+    color: #ffff;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.493);
+    margin-left: 10px;
+}
+
+.filtro > hr {
+    background-color: #ffffff62;
+    height: 1px;
+}
+
+.filtro > select {
+    width: 200px;
+    font-size: 15px;
+    margin-left: 20px;
+    font-family: 'Poppins', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: #ffff;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.filtro > select > option {
+    background-color: #0a0a0c;
+    color: #ffffffa6;
+    padding: 10px;
+}
+
+footer {
+    background-color: #27272b;
+    padding: 30px;
+    margin-top: 110px;
+}
+
+footer > div {
+    margin-left: 30px;
+}
+
+footer > div > img {
+    transition: all 0.3s;
+}
+
+footer > div > img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+#titulo1 {
+    color: #ffffffaf;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.recursos {
+    display: flex;
+}
+
+.recursos > div {
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.recursos > div > a {
+    color: #ffffffc2;
+    transition: all 0.3s;
+}
+
+.recursos > div > a:hover {
+    color: rgb(67, 67, 201);
+}
+
+#exemplo {
+    margin-left: 40px;
+    font-size: 13px;
+    width: 600px;
+    color: #ffffff73;
+}
+
+.finalizacao {
+    margin-top: 20px;
+}
+
+.finalizacao > a {
+    color: #ffffffc2;
+    transition: all 0.3s;
+    margin-left: 10px;
+}
+
+.finalizacao > a:hover {
+    color: rgb(67, 67, 201);
+}
+
+.finalizacao > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 600px;
+    transition: all 0.3s;
+}
+
+.finalizacao > img:hover {
+    opacity: 0.5;
+}
+
+
+

@@ -1,0 +1,331 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #0a0a0c;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100vw;
+    background-color: #161618;
+    padding: 17px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.cabecalho > img {
+    height: 45px;
+    width: 45px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.cabecalho > h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #ffff;
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.cabecalho > nav {
+    margin-left: 30px;
+    width: 1050px;
+}
+
+.cabecalho > nav > a {
+    font-size: 16px;
+    color: #b3b3b3;
+    padding-left: 15px;
+    transition: all 0.3s;
+}
+
+.cabecalho > nav > a:hover {
+    color: #ffff;
+}
+
+.cabecalho > div {
+    display: flex;
+    margin-right: 20px;
+    transition: all 0.3s;
+}
+
+.cabecalho > div > .logo {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: 20px;
+    transition: all 0.3s;
+} 
+
+.cabecalho > div >  .logo:hover{
+    background-color: rgb(8, 8, 8);
+    border-radius: 10px;
+} 
+
+.cabecalho > div > #baixar {
+    color: black;
+    background-color: rgb(18, 197, 221); 
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 6px;
+    height: 33px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.cabecalho > div > #baixar:hover {
+    background-color: rgb(29, 167, 185);
+}
+
+main {
+    margin: auto;
+    width: 1000px;
+    margin-top: 110px;
+}
+
+.inicio {
+    display: flex;
+}
+
+.inicio > a {
+    margin-left: 430px;
+    margin-top: 16px;
+    font-size: 16px;
+    color: #b3b3b3;
+    transition: all 0.3s;
+}
+
+.inicio > a:hover {
+    color: #ffff;
+}
+
+main > .inicio > form {
+    display: flex;
+    width: 500px;
+    background-color: #1f1e1e;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+input {
+    width: 500px;
+    padding: 6px;
+    background-color: #1f1e1e;
+    border: none;
+    border-radius: 20px;
+    color: #ffff;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.493);
+}
+
+
+main > h1 {
+    color:  #ffff;
+    font-size: 30px;
+    margin-top: 30px;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.principal {
+    display: flex;
+    margin-top: 40px;
+}
+
+.card-compra {
+    padding: 10px;
+    background-color: #3030306b;
+    width: 660px;
+    border-radius: 10px;
+    height: 240px;
+    margin-bottom: 20px;
+}
+
+.card-compra > div > img {
+    width: 150px;
+    height: 190px;
+    border-radius: 8px;
+}
+
+.conjunto {
+    display: flex;
+}
+
+.dados {
+    margin-left: 30px;
+    margin-top: 70px;
+}
+
+.dados > p {
+    color: #ffff;
+    background-color: #4b4646;
+    padding: 5px;
+    font-size: 14px;
+    display: inline;
+    border-radius: 5px;
+}
+
+.dados > h2 {
+    color: #ffff;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.descontos {
+    margin-top: 70px;
+    margin-left: 60px;
+}
+
+.descontos > span {
+    margin-left: 10px;
+}
+
+.descontos > em {
+    color: #b1afaf;
+    text-decoration: line-through;
+    font-size: 15px;
+    margin-left: 55px;
+}
+.descontos > p {
+    color: #ffff;
+    font-size: 18px;
+    margin-left: 55px;
+}
+
+.card-compra > a {
+    margin-left: 83%;
+    color: #ffff;
+    background-color: #ffffff49;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.card-compra > a:hover {
+    text-decoration: underline;
+}
+
+.preco {
+    display: flex;
+}
+
+.valores {
+    margin-left: 40px;
+}
+
+.valores > h1 {
+    color: #ffff;
+    font-size: 25px;
+    margin-bottom: 30px;
+    font-family: 'Poppins', sans-serif;;
+}
+
+.valores > .preco {
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.valores > .preco > .titulo {
+    color: #ffff;
+    font-size: 16px;
+}
+
+.valores > .preco > .valor {
+    color: #ffffffb7;
+}
+
+footer {
+    background-color: #27272b;
+    padding: 30px;
+    margin-top: 110px;
+}
+
+footer > div {
+    margin-left: 30px;
+}
+
+footer > div > img {
+    transition: all 0.3s;
+}
+
+footer > div > img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+
+}
+
+#titulo1 {
+    color: #ffffffaf;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.recursos {
+    display: flex;
+}
+
+.recursos > div {
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.recursos > div > a {
+    color: #ffffffc2;
+    transition: all 0.3s;
+}
+
+.recursos > div > a:hover {
+    color: rgb(67, 67, 201);
+}
+
+#exemplo {
+    margin-left: 40px;
+    font-size: 13px;
+    width: 600px;
+    color: #ffffff73;
+}
+
+.finalizacao {
+    margin-top: 20px;
+}
+
+.finalizacao > a {
+    color: #ffffffc2;
+    transition: all 0.3s;
+    margin-left: 10px;
+}
+
+.finalizacao > a:hover {
+    color: rgb(67, 67, 201);
+}
+
+.finalizacao > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 600px;
+    transition: all 0.3s;
+}
+
+.finalizacao > img:hover {
+    opacity: 0.5;
+}

@@ -1,0 +1,442 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #0a0a0c;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100vw;
+    background-color: #161618;
+    padding: 17px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.cabecalho > img {
+    height: 45px;
+    width: 45px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+.cabecalho > h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #ffff;
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.cabecalho > nav {
+    margin-left: 30px;
+    width: 1050px;
+}
+
+.cabecalho > nav > a {
+    font-size: 16px;
+    color: #b3b3b3;
+    padding-left: 15px;
+    transition: all 0.3s;
+}
+
+.cabecalho > nav > a:hover {
+    color: #ffff;
+}
+
+.cabecalho > div {
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.cabecalho > div > .logo {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: 20px;
+    transition: all 0.3s;
+} 
+
+.cabecalho > div >  .logo:hover{
+    background-color: rgb(8, 8, 8);
+    border-radius: 10px;
+} 
+
+.cabecalho > div > #baixar {
+    color: black;
+    background-color: rgb(18, 197, 221); 
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 6px;
+    height: 33px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.cabecalho > div > #baixar:hover {
+    background-color: rgb(29, 167, 185);
+}
+
+main {
+    margin: auto;
+    width: 1000px;
+    margin-top: 110px;
+}
+
+.inicio {
+    display: flex;
+}
+
+.inicio > a {
+    margin-left: 430px;
+    margin-top: 16px;
+    font-size: 16px;
+    color: #b3b3b3;
+    transition: all 0.3s;
+}
+
+.inicio > a:hover {
+    color: #ffff;
+}
+
+main > .inicio > form {
+    display: flex;
+    width: 500px;
+    background-color: #1f1e1e;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+input {
+    width: 500px;
+    padding: 6px;
+    background-color: #1f1e1e;
+    border: none;
+    border-radius: 20px;
+    color: #ffff;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.493);
+}
+
+.sobre {
+    margin-top: 30px;
+}
+
+.sobre > h1 {
+    color: #ffffffe1;
+    font-size: 30px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sobre > div {
+    display: flex;
+}
+
+.sobre > div > img {
+    width: 20px;
+    height: 20px;
+    margin: 3px;
+}
+
+.sobre > div > p {
+    margin-left: 10px;
+    background-color: #575555;
+    color: #a5a5a5;
+    padding: 3px;
+    font-weight: 700;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.sobre > div > h2 {
+    margin-left: 20px;
+    color: #ffff;
+    background-color: rgb(204, 22, 22);
+    padding: 3px;
+    border-radius: 4px;
+}
+
+.principal {
+    display: flex;
+    margin-top: 30px;
+}
+
+.descricao {
+    width: 60%;
+}
+
+.principal > .descricao > img {
+    border-radius: 10px;
+}
+
+.principal > .descricao > p {
+    margin-top: 15px;
+    color: #c9c9c9;
+}
+
+.descricao > div {
+    display: inline-block;
+    padding: 5px;
+}
+
+.descricao > div > h2 {
+    color: #ffff;
+    margin-bottom: 3px;
+}
+
+.descricao > div > p {
+    color: #ffff;
+    margin-top: 3px;
+}
+
+.edicao {
+    background-color: #1f1e1e;
+    padding-bottom: 8px;
+    width: 580px;
+}
+
+#edicao2 {
+    font-size: 22px;
+    color: #ffff;
+    margin-bottom: 10px;
+    margin-top: 90px;
+}
+
+.primaria {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.img > img {
+    width: 475px;
+    height: 200px;
+}
+
+.texto {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.texto > div {
+    display: flex;
+}
+
+.texto > div > h2 {
+    font-size: 15px;
+    color: #ffffffbe;
+    font-weight: 500;
+    background-color: #383737;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.texto > div > h1 {
+    color: #ffff;
+    margin-left: 10px;
+    margin-top: 2px;
+    font-weight: 500;
+}
+
+.texto > p {
+    margin-top: 8px;
+    color: #9c9797;
+}
+
+.valores {
+    display: flex;
+}
+
+.valores > span {
+    margin-left: 20px;
+    margin-right: 40px;
+}
+
+.valores > div > em {
+    text-decoration: line-through;
+    color: #ffffffa8;
+    font-size: 16px;
+}
+
+.valores > div > p {
+    color: #ffff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.valores > a > button {
+    margin-left: 180px;
+}
+
+.valores > a > button:active {
+    border: 1px solid #ffff;
+}
+
+#notas {
+    font-size: 22px;
+    font-weight: 500;
+    color: #ffff;
+    margin-bottom: 10px;
+    margin-top: 100px;
+    margin-left: 7px;
+}
+
+.classificacao {
+    display: flex;
+}
+
+.classificacao > img {
+    width: 15px;
+    height: 15px;
+    margin: 2px;
+}
+
+.classificacao > p {
+    color: #ffffffab;
+    font-weight: 600;
+    margin-left: 250px;
+    background-color: #1f1e1e;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.dados {
+    margin-left: 70px;
+}
+
+.compra img {
+    width: 340px;
+    height: 450px;
+}
+
+.tipo_game p {
+    font-size: 12px;
+    color: #b3b3b3;
+    font-weight: 500;
+    background-color: #383737;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 5px;
+    border-radius: 4px;
+}
+
+.preco {
+    display: flex;
+    margin-top: 7px;
+}
+
+.preco > span {
+    margin-right: 15px;
+}
+
+.preco > em {
+    text-decoration: line-through;
+    color: #b4b4b4;
+    margin-right: 10px;
+}
+
+.preco > p {
+    color: #ffff;
+}
+
+.botoes {
+    display: block;
+    margin-top: 15px;
+}
+
+footer {
+    background-color: #27272b;
+    padding: 30px;
+    margin-top: 110px;
+}
+
+footer > div {
+    margin-left: 30px;
+}
+
+footer > div > img {
+    transition: all 0.3s;
+}
+
+footer > div > img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+
+}
+
+#titulo1 {
+    color: #ffffffaf;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.recursos {
+    display: flex;
+}
+
+.recursos > div {
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.recursos > div > a {
+    color: #ffffffc2;
+    transition: all 0.3s;
+}
+
+.recursos > div > a:hover {
+    color: rgb(67, 67, 201);
+}
+
+#exemplo {
+    margin-left: 40px;
+    font-size: 13px;
+    width: 600px;
+    color: #ffffff73;
+}
+
+.finalizacao {
+    margin-top: 20px;
+}
+
+.finalizacao > a {
+    color: #ffffffc2;
+    transition: all 0.3s;
+    margin-left: 10px;
+}
+
+.finalizacao > a:hover {
+    color: rgb(67, 67, 201);
+}
+
+.finalizacao > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 600px;
+    transition: all 0.3s;
+}
+
+.finalizacao > img:hover {
+    opacity: 0.5;
+}

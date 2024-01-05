@@ -1,0 +1,516 @@
+@import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    background-color: #0a0a0c;
+}
+
+.cabecalho {
+    display: flex;
+    width: 100vw;
+    background-color: #161618;
+    padding: 17px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.cabecalho > img {
+    height: 45px;
+    width: 45px;
+    border-radius: 6px;
+    margin-left: 10px;
+}
+
+
+.cabecalho > h2 {
+    font-family: 'Oswald', sans-serif;
+    color: #ffff;
+    font-size: 30px;
+    margin-left: 12px;
+}
+
+.cabecalho > nav {
+    margin-left: 30px;
+    width: 1050px;
+}
+
+.cabecalho > nav > a {
+    font-size: 16px;
+    color: #b3b3b3;
+    padding-left: 15px;
+    transition: all 0.3s;
+}
+
+.cabecalho > nav > a:hover {
+    color: #ffff;
+}
+
+.cabecalho > div {
+    display: flex;
+    margin-right: 20px;
+}
+
+.cabecalho > div > .logo {
+    width: 25px;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: 20px;
+    transition: all 0.3s;
+} 
+
+.cabecalho > div >  .logo:hover{
+    background-color: rgb(8, 8, 8);
+    border-radius: 10px;
+} 
+
+.cabecalho > div > #baixar {
+    color: black;
+    background-color: rgb(18, 197, 221); 
+    padding: 4px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-radius: 6px;
+    height: 33px;
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.cabecalho > div > #baixar:hover {
+    background-color: rgb(29, 167, 185);
+}
+
+main {
+    margin: auto;
+    width: 1000px;
+    margin-top: 110px;
+}
+
+.inicio {
+    display: flex;
+}
+
+.inicio > a {
+    margin-left: 430px;
+    margin-top: 16px;
+    font-size: 16px;
+    color: #b3b3b3;
+    transition: all 0.3s;
+}
+
+.inicio > a:hover {
+    color: #ffff;
+}
+
+main > .inicio > form {
+    display: flex;
+    width: 500px;
+    background-color: #1f1e1e;
+    padding: 6px;
+    border-radius: 20px;
+}
+
+input {
+    width: 500px;
+    padding: 6px;
+    background-color: #1f1e1e;
+    border: none;
+    border-radius: 20px;
+    color: #ffff;
+}
+
+input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, 0.493);
+}
+
+.container_carrossel {
+    margin-top: 30px;
+    display: flex;
+}
+
+.container_carrossel > .principal > img {
+    width: 780px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.container_carrossel > .principal {
+    position: relative;
+}
+
+.container_carrossel > .principal > h2{
+    position: absolute;
+    color: #ffff;
+    top: 60%;
+    width: 400px;
+    font-weight: 500;
+    margin-left: 30px;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container_carrossel > .principal > p {
+    position: absolute;
+    color: #ffff;
+    top: 85%;
+    margin-left: 30px;
+    background-color: rgba(9, 78, 9, 0.932);
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.container_carrossel > .principal > p > em {
+    color: rgba(182, 175, 175, 0.493);
+    text-decoration: line-through;
+}
+
+.container_carrossel > .principal > p > strong {
+    color: #ffff;
+}
+
+.container_carrossel > .principal > a {
+    position: absolute;
+    top: 85.5%;
+    right: 43%;
+    color: black;
+    font-weight: 500;
+    padding: 7px;
+    background-color: #ffff;
+    border-radius: 10px;
+}
+
+.container_carrossel > .principal > a:hover {
+    background-color: rgb(194, 194, 194);
+}
+
+.container_carrossel > .secundaria {
+    margin-left: 30px;
+}
+
+.container_carrossel > .secundaria > div {
+    display: flex;
+    margin-bottom: 15px;
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.container_carrossel > .secundaria > div > img {
+    width: 40px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.container_carrossel > .secundaria > div > p {
+    margin-top: 20px;
+    font-size: 13px;
+    margin-left: 8px;
+    color: #ffff;
+}
+
+.container_carrossel > .secundaria > div:hover {
+    background-color: #353535;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.topico {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    color: #ffff;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.topico > strong {
+    color: #ffff;
+    font-size: 15px;
+}
+
+.cards {
+    margin-top: 20px;
+    display: flex;
+}
+
+.cards > .game {
+    margin-right: 20px;
+}
+
+.cards > .game:hover {
+    cursor: pointer;
+}
+
+.cards > .game > a > img {
+    width: 190px;
+    height: 260px;
+    border-radius: 10px;
+}
+
+.cards > .game > a > img:hover {
+    border: 1px solid #ffff;
+}
+
+.cards > .game > .descricao {
+    margin-top: 10px;
+}
+
+.cards > .game > .descricao > p {
+    font-size: 10px;
+    color: #858585;
+    font-weight: 700;
+}
+
+.cards > .game > .descricao > h2 {
+    color: #ffff;
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.cards > .game > .descricao > div {
+    display: flex;
+    margin-top: 8px
+}
+
+.descricao > div > span {
+    margin-top: 12px;
+    font-weight: 600;
+}
+
+.valores {
+    margin-left: 26%;
+}
+
+.valores > em {
+    color: #ffffffb6;
+    text-decoration: line-through;
+}
+
+.valores > h2 {
+    color: #ffff;
+}
+
+.gratis {
+    margin-top: 60px;
+    background-color: #424141b0;
+    padding: 20px;
+    padding-top: 30px;
+    border-radius: 5px;
+}
+
+.inicio {
+    display: flex;
+}
+
+.inicio > img {
+    width: 50px;
+}
+
+.inicio > h1 {
+    color: #ffff;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 20px;
+    display: block;
+    width: 100%;
+}
+
+.inicio > button {
+    background-color: transparent;
+    color: #ffff;
+    transition: all 0.3s;
+}
+
+.inicio > button:hover {
+    color: #c7c1c1;
+}
+
+.jogosgratis {
+    display: flex;
+    margin-top: 30px;
+}
+
+.jogosgratis > img {
+    width: 450px;
+    height: 290px;
+    font-size: 50px;
+    border-radius: 10px;
+}
+
+.jogosgratis > img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.final {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.final > h2 {
+    color: #ffff;
+    font-weight: 500;
+}
+
+.final > p {
+    color: #ffffff80;
+}
+
+.tipos {
+    margin-top: 60px;
+    display: flex;
+}
+
+.tipos h1 {
+    color: #ffff;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.tipos img {
+    width: 40px;
+    height: 60px;
+    border-radius: 8px;
+}
+
+.destaque {
+    display: flex;
+}
+
+.destaque > button {
+    background-color: transparent;
+    color: #ffff;
+    margin-left: 65px;
+}
+
+.destaque > button:hover {
+    color: #ffff;
+}
+
+.linha-vertical {
+    height: 460px;
+    border-right: 1px solid #ffffff2a;
+}
+
+.tipos section {
+    margin-left: 20px;
+}
+
+.tipos div {
+    display: flex;
+    padding: 5px;
+    margin-bottom: 15px;
+    transition: all 0.3s;
+}
+
+.tipos > section > div:hover {
+    background-color: #252525;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tipos > section > div > p {
+    margin-top: 20px;
+    font-size: 15px;
+    margin-left: 8px;
+    color: #ffff;
+}
+
+.tipos > section > div > span {
+    margin-left: 20px;
+    margin-top: 18px;
+    font-weight: 700;
+}
+
+footer {
+    background-color: #27272b;
+    padding: 30px;
+    margin-top: 110px;
+}
+
+footer > div {
+    margin-left: 30px;
+}
+
+footer > div > img {
+    transition: all 0.3s;
+}
+
+footer > div > img:hover {
+    cursor: pointer;
+    opacity: 0.5;
+
+}
+
+#titulo1 {
+    color: #ffffffaf;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 25px;
+    margin-left: 50px;
+    font-size: 14px;
+}
+
+.recursos {
+    display: flex;
+}
+
+.recursos > div {
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.recursos > div > a {
+    color: #ffffffc2;
+    transition: all 0.3s;
+}
+
+.recursos > div > a:hover {
+    color: rgb(67, 67, 201);
+}
+
+#exemplo {
+    margin-left: 40px;
+    font-size: 13px;
+    width: 600px;
+    color: #ffffff73;
+}
+
+.finalizacao {
+    margin-top: 20px;
+}
+
+.finalizacao > a {
+    color: #ffffffc2;
+    transition: all 0.3s;
+    margin-left: 10px;
+}
+
+.finalizacao > a:hover {
+    color: rgb(67, 67, 201);
+}
+
+.finalizacao > img {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 600px;
+    transition: all 0.3s;
+}
+
+.finalizacao > img:hover {
+    opacity: 0.5;
+}
+
+
+
