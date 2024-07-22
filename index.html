@@ -6,6 +6,7 @@
     <title>LevelUp | Site e loja oficial</title>
     <link rel="stylesheet" href="assets/css/index.css">
     <link rel="shortcut icon" href="assets/imagens/favicon.png" type="image/x-icon">
+    <script src="assets/js/main.js" defer></script>
 </head>
 <body>
     <header class="cabecalho">
@@ -67,83 +68,52 @@
             </section>
         </section>
 
-        <h1 class="topico">Promoção de fim de ano <strong>></strong></h1>
+        <h1 class="topico">Promoção de fim de ano</h1>
         <section class="cards">
- 
-            <div class="game">
-                <a href="compra.html"><img src="assets/imagens/game_reddead.jpg" alt="Capa do jogo Read Dead Redemption 2"></a>
-                <div class="descricao">
-                    <p>JOGO BASE</p>
-                    <h2>Read Dead Redemption 2</h2>
-                    <div>
-                        <span class="tag is-info">-87%</span>
-                        <div class="valores">
-                            <em>R$ 310,00</em>
-                            <h2>R$ 98,90</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <card-game 
+            src="assets/imagens/game_reddead.jpg"
+            title="Read Dead Redemption" 
+            titulo-jogo="Read Dead Redemption"
+            desconto="-87%" 
+            preco-antigo="R$ 310,00"
+            preco-atual="R$ 98,90">
+            </card-game>
 
-            <div class="game">
-                <a href="compra.html"><img src="assets/imagens/game_pcbuilding.jpg" alt="Capa do PC Building Simulator 2"></a>
-                <div class="descricao">
-                    <p>JOGO BASE</p>
-                    <h2>PC Building Simulator 2</h2>
-                    <div>
-                        <span class="tag is-info">-33%</span>
-                        <div class="valores">
-                            <em>R$ 77,50</em>
-                            <h2>R$ 51,00</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <card-game 
+            src="assets/imagens/game_pcbuilding.jpg"
+            title="Capa do PC Building Simulator 2" 
+            titulo-jogo="PC Building Simulator 2"
+            desconto="-33%" 
+            preco-antigo="R$ 77,50"
+            preco-atual="R$ 51,00">
+            </card-game>
 
-            <div class="game">
-                <a href="compra.html"><img src="assets/imagens/game _tinetinas.jpg" alt="Capa do jogo Tiny Tina's Wonderlands: Passe de Temporada"></a>
-                <div class="descricao">
-                    <p>JOGO BASE</p>
-                    <h2>Tiny Tina's Wonderlands</h2>
-                    <div>
-                        <span class="tag is-info">-75%</span>
-                        <div class="valores">
-                            <em>R$ 299,90</em>
-                            <h2>R$ 74,97</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <card-game 
+            src="assets/imagens/game _tinetinas.jpg"
+            title="Capa do jogo Tiny Tina's Wonderlands: Passe de Temporada" 
+            titulo-jogo="Tiny Tina's Wonderlands"
+            desconto="-75%" 
+            preco-antigo="R$ 299,90"
+            preco-atual="R$ 74,97">
+            </card-game>
 
-            <div class="game" style="width: 200px;">
-                <a href="compra.html"><img src="assets/imagens/game_thecrew.jpg" alt="Capa do jogo The Crew™ Motorfest Standard Edition"></a>
-                <div class="descricao">
-                    <p>JOGO BASE</p>
-                    <h2>The Crew™ Motorfest Standard Edition</h2>
-                    <div>
-                        <span class="tag is-info">-50%</span>
-                        <div class="valores">
-                            <em>R$ 299,90</em>
-                            <h2>R$ 149,90</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <card-game style="width: 200px;" 
+            src="assets/imagens/game_thecrew.jpg"
+            title="Capa do jogo The Crew™ Motorfest Standard Edition" 
+            titulo-jogo="The Crew™ Motorfest Standard Edition"
+            desconto="-50%" 
+            preco-antigo="R$ 299,90"
+            preco-atual="R$ 149,90">
+            </card-game>
 
-            <div class="game">
-                <a href="compra.html"><img src="assets/imagens/game_avatar.jpg" alt="Capa do jogo Avatar: Frontiers of Pandora"></a>
-                <div class="descricao">
-                    <p>JOGO BASE</p>
-                    <h2>Avatar: Frontiers of Pandora</h2>
-                    <div>
-                        <span class="tag is-info">-10%</span>
-                        <div class="valores">
-                            <em>R$ 300,00</em>
-                            <h2>R$ 250,00</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <card-game 
+            src="assets/imagens/game_avatar.jpg"
+            title="Capa do jogo Avatar: Frontiers of Pandora" 
+            titulo-jogo="Avatar: Frontiers of Pandora"
+            desconto="-10%" 
+            preco-antigo="R$ 300,00"
+            preco-atual="R$ 250,00">
+            </card-game>
         </section>
 
         <section class="gratis">
@@ -182,23 +152,28 @@
                     <p>Alan Wake 2</p>
                     <span class="tag is-info">-24%</span>
                 </div>
+
                 <div>
                     <img src="assets/imagens/game_gtav.png" alt="Capa do jogo GTA 5">
                     <p>Grand Theft Auto V</p>
                     <span class="tag is-info">-30%</span>
                 </div>
+
                 <div>
                     <img src="assets/imagens/game_cyberpunk.png" alt="Capa do jogo Cyberpunk 2077">
                     <p>Cyberpunk 2077</p>
                     <span class="tag is-info">-75%</span>
                 </div>
+
                 <div>
                     <img src="assets/imagens/game_avatar.jpg" alt="Capa do jogo Avatar: Frontiers of Pandora">
                     <p>Avatar: Frontiers of Pandora</p>
                     <span class="tag is-info">-80%</span>
                 </div>
             </section>
+
             <div class="linha-vertical"></div>
+
             <section class="maisjogados">
                 <section class="destaque">
                     <h1>Mais jogados</h1>
@@ -210,53 +185,64 @@
                     <p>Rocket League</p>
                     <span class="tag is-info">-20%</span>
                 </div>
+
                 <div>
                     <img src="assets/imagens/game_saintsrow.jpg" alt="Capa do jogo Saints Row IV: Re-Elected">
                     <p>Saints Row</p>
                     <span class="tag is-info">-15%</span>
                 </div>
+
                 <div>
                     <img src="assets/imagens/game_gtav.png" alt="Capa do jogo GTA 5">
                     <p>Grand Theft Auto V</p>
                     <span class="tag is-info">-60%</span>
                 </div>
+
                 <div>
                     <img src="assets/imagens/game_reddead.jpg" alt="Capa do jogo Read Dead Redemption 2">
                     <p>Read Dead Redemption 2</p>
                     <span class="tag is-info">-43%</span>
                 </div>
+
                 <div>
                     <img src="assets/imagens/game_thelordoftherings.png" alt="Capa do jogo The Lord Of The Rings™">
                     <p>LOTR: Return to Moria</p>
                     <span class="tag is-info">-70%</span>
                 </div>
             </section>
+
             <div class="linha-vertical"></div>
+
             <section class="lancamentos">
                 <section class="destaque">
                     <h1>Lançamentos</h1>
                     <button class="button is-outlined is-small">Ver mais</button>
                 </section>
+
                 <div>
                     <img src="assets/imagens/game_crysis.jpg" alt="Capa do jogo Crysis 3">
                     <p>Crysis 3</p>
                     <span class="tag is-info">-10%</span>
                 </div>
+
                 <div>
                     <img src="assets/imagens/game_snakebird.jpg" alt="Capa do jogo Snakebird Complete">
                     <p>Snakebird Complete</p>
                     <span class="tag is-info">-10%</span>
                 </div>
+
                 <div>
                     <img src="assets/imagens/game_xijiang.png" alt="Capa do jogo Xijang Shipyard">
                     <p>Xijang Shipyard</p>
                     <span class="tag is-info">-15%</span>
                 </div>
+
                 <div>
                     <img src="assets/imagens/game_tilldawn.jpg" alt="Capa do jogo 20 Minutes Till Dawn">
                     <p>20 Minutes Till Dawn</p>
                     <span class="tag is-info">-10%</span>
                 </div>
+
                 <div>
                     <img src="assets/imagens/game_thelastgame.jpg" alt="Capa do jogo The Last Game">
                     <p>The Last Game</p>
@@ -265,83 +251,52 @@
             </section>
         </section>
 
-        <h1 class="topico">Mais populares <strong>></strong></h1>
+        <h1 class="topico">Mais populares</h1>
         <section class="cards">
- 
-            <div class="game">
-                <a href="compra.html"><img src="assets/imagens/game_gtav.png" alt="Capa do jogo GTA V" style="width: 200px;"></a>
-                <div class="descricao">
-                    <p>JOGO BASE</p>
-                    <h2>Grand Theft Auto V</h2>
-                    <div>
-                        <span class="tag is-info">-50%</span>
-                        <div class="valores">
-                            <em>R$ 82,42</em>
-                            <h2>R$ 41,21</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <card-game style="width: 235px;"
+            src="assets/imagens/game_gtav.png" 
+            title="Capa do jogo GTA V" 
+            titulo-jogo="Grand Theft Auto V" 
+            desconto="-50%" 
+            preco-antigo="R$ 82,42" 
+            preco-atual="R$ 41,21">
+            </card-game>
 
-            <div class="game">
-                <a href="compra.html"><img src="assets/imagens/game_thelordoftherings.png" alt="Capa do The Lord of the Rings™: Return to Moria™"></a>
-                <div class="descricao">
-                    <p>JOGO BASE</p>
-                    <h2>The Lord of the Rings™</h2>
-                    <div>
-                        <span class="tag is-info">-50%</span>
-                        <div class="valores">
-                            <em>R$ 107,99</em>
-                            <h2>R$ 53,99</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <card-game 
+            src="assets/imagens/game_thelordoftherings.png" 
+            title="Capa do The Lord of the Rings™: Return to Moria™" 
+            titulo-jogo="The Lord of the Rings™" 
+            desconto="-50%" 
+            preco-antigo="R$ 107,99" 
+            preco-atual="R$ 53,99">
+            </card-game>
 
-            <div class="game">
-                <a href="compra.html"><img src="assets/imagens/game_snakebird.jpg" alt="Capa do jogo Snakebird Complete" style="width: 200px;"></a>
-                <div class="descricao">
-                    <p>JOGO BASE</p>
-                    <h2>Snakebird Complete</h2>
-                    <div>
-                        <span class="tag is-info">-10%</span>
-                        <div class="valores">
-                            <em>R$ 45,00</em>
-                            <h2>R$ 39,99</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <card-game style="width: 235px;"
+            src="assets/imagens/game_snakebird.jpg"  
+            title="Capa do jogo Snakebird Complete" 
+            titulo-jogo="Snakebird Complete" 
+            desconto="-10%" 
+            preco-antigo="R$ 45,00" 
+            preco-atual="R$ 39,99">
+            </card-game>
 
-            <div class="game" style="width: 200px;">
-                <a href="compra.html"><img src="assets/imagens/game_cyberpunk.png" alt="Capa do jogo Cyberpunk 2077"></a>
-                <div class="descricao">
-                    <p>JOGO BASE</p>
-                    <h2>Cyberpunk 2077: Ultimate Edition</h2>
-                    <div>
-                        <span class="tag is-info">-33%</span>
-                        <div class="valores">
-                            <em>R$ 264,99</em>
-                            <h2>R$ 177,64</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <card-game 
+            src="assets/imagens/game_cyberpunk.png"  
+            title="Capa do jogo Cyberpunk 2077" 
+            titulo-jogo="Cyberpunk 2077: Ultimate Edition" 
+            desconto="-33%" 
+            preco-antigo="R$ 264,99" 
+            preco-atual="R$ 177,64">
+            </card-game>
 
-            <div class="game" style="width: 200px;">
-                <a href="compra.html"><img src="assets/imagens/game _tinetinas.jpg" alt="Capa do jogo Tiny Tina's Assault on Dragon Keep"></a>
-                <div class="descricao">
-                    <p>JOGO BASE</p>
-                    <h2>Tiny Tina's Assault on Dragon Keep</h2>
-                    <div>
-                        <span class="tag is-info">-50%</span>
-                        <div class="valores">
-                            <em>R$ 53,90</em>
-                            <h2>R$ 26,94</h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <card-game 
+            src="assets/imagens/game _tinetinas.jpg"  
+            title="Capa do jogo Tiny Tina's Assault on Dragon Keep" 
+            titulo-jogo="Tiny Tina's Assault on Dragon Keep" 
+            desconto="-50%" 
+            preco-antigo="R$ 53,90" 
+            preco-atual="R$ 26,94">
+            </card-game>
         </section>
     </main>
 
