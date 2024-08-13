@@ -1,0 +1,58 @@
+{
+    "games": [
+      { 
+        "id": 1, 
+        "title": "Red Dead Redemption 2",
+        "srcMainImage": "assets/imagens/game_reddead.jpg",
+        "srcSecondaryImage": "assets/imagens/banner_reddead.jpg",
+        "description": "Vencedor de mais de 175 prêmios de Jogo do Ano e avaliado com mais de 250 notas máximas, Red Dead Redemption 2 é uma história épica de honra e lealdade no alvorecer dos tempos modernos. Inclui Red Dead Redemption 2: Modo História e Red Dead Online.",
+        "oldPrice": "R$ 299,99",
+        "currentPrice": "R$ 98,96",
+        "discount": "-87%"
+      },
+
+      { 
+        "id": 2, 
+        "title": "PC Building Simulator 2",
+        "srcMainImage": "assets/imagens/game_pcbuilding.jpg",
+        "srcSecondaryImage": "assets/imagens/banner_pcbuilding2.jpg",
+        "description": "Aumente o seu império conforme você aprende a consertar, montar e personalizar PCs de alto nível. Experimente uma simulação mais profunda, um modo carreira aprimorado e novos recursos de personalização. Use peças realistas de mais de 40 marcas de hardware para dar vida ao PC dos sonhos.",
+        "oldPrice": "R$ 77,50",
+        "currentPrice": "R$ 51,00",
+        "discount": "-30%"
+      },
+
+      { 
+        "id": 3, 
+        "title": "Tiny Tina's Wonderlands",
+        "srcMainImage": "assets/imagens/game _tinytinas.jpg",
+        "srcSecondaryImage": "assets/imagens/banner_tinytinas.jpg",
+        "description": "Embarque numa aventura épica cheia de extravagâncias, maravilhas e armamentos poderosos! Role os dados para criar seu próprio herói multiclasse e enfrente uma missão para deter o tirânico Senhor dos Dragões na base de saque, tiro, espadada e feitiço.",
+        "oldPrice": "R$ 299,90",
+        "currentPrice": "R$ 74,97",
+        "discount": "-43%" 
+      },
+
+      { 
+        "id": 4, 
+        "title": "Avatar: Frontiers of Pandora",
+        "srcMainImage": "assets/imagens/game_avatar.jpg",
+        "srcSecondaryImage": "assets/imagens/banner_avatar.jpg",
+        "description": "Em Avatar: Frontiers of Pandora™, você embarcará numa jornada pela desconhecida Fronteira Ocidental. Junte-se a outros clãs para proteger Pandora contra as forças formidáveis da RDA, resgate seu passado perdido e descubra o que é tornar-se na'vi.",
+        "oldPrice": "R$ 300,00",
+        "currentPrice": "R$ 250,00",
+        "discount": "-24%"
+      },
+
+      { 
+        "id": 5, 
+        "title": "The Lord of the Rings™",
+        "srcMainImage": "assets/imagens/game_thelordoftherings.png",
+        "srcSecondaryImage": "assets/imagens/banner_thelordoftherings.jpg",
+        "description": "O único jogo de criação e sobrevivência ambientado na Quarta Era da Middle-earth™, o icônico mundo da fantasia criado por J.R.R. Tolkien.",
+        "oldPrice": "R$ 107,99",
+        "currentPrice": "R$ 53,99",
+        "discount": "-47%" 
+      }
+    ]
+  }
