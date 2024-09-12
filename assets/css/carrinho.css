@@ -210,6 +210,16 @@ main > h1 {
     margin-left: 55px;
 }
 
+.descontos > input {
+    width: 50px;
+    margin-left: 55px;
+    margin-top: 8px;
+    background-color: #535353;
+    font-size: 14px;
+    border-radius: 6px;
+    text-align: center;
+}
+
 .card-compra > a {
     margin-left: 83%;
     color: #ffff;

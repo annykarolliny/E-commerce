@@ -137,12 +137,30 @@ function getIdCard() {
                     </div>
                     <div class="botoes">
                         <a href="pagamento.html"><button class="button is-danger" style="background-color: rgb(201, 22, 22); width: 340px; font-weight: 600;">COMPRE AGORA</button></a>
-                        <a href="carrinho.html"><button class="button is-outlined" style="background-color: transparent; color: #ffff; width: 340px; font-size: 13px; margin-top: 8px;">VISUALIZAR NO CARRINHO</button></a>
+                        <a href="carrinho.html"><button class="button is-outlined" id="add-to-cart" style="background-color: transparent; color: #ffff; width: 340px; font-size: 13px; margin-top: 8px;">VISUALIZAR NO CARRINHO</button></a>
                     </div>
                 </div>
             </section>
         </section>
             `;
     }
-  
+
+  async function addToCar() {
+    const idCardGame = getIdCard();
+    const res = await fetch(`http://localhost:3000/games/${idCardGame}`);
+    const cardGame = await res.json();
+    
+    const cart = JSON.parse(localStorage.getItem("cart")) || [];
+    
+    const productAlreadyAdded = cart.find((item) => item.id === cardGame.id);
+    
+    if (!productAlreadyAdded) {
+      cart.push(cardGame);
+      localStorage.setItem("cart", JSON.stringify(cart));
+    } else {
+      return;
+    }
+  }
+    
+addToCar();
 provideCardData();
